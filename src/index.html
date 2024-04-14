@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Chess Socket</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.2/chess.js"></script>
+  <script src="./chessboard/js/chessboard-1.0.0.min.js"></script>
+  <link rel="stylesheet" href="./chessboard/css/chessboard-1.0.0.min.css">
+
+  <script type="module" src="game.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+        <div id="board" style="width: 500px; margin: auto"></div>
+      
+      <div style="margin: auto"">
+      
+        <div id="player"></div>
+        <form id="form">
+          <input type="text" id="username" required placeholder="Username">
+          <input type="number" id="room" min="0" max="99" placeholder="Numero de sala" required>
+          <button type="submit">Unirse o crear sala</button>
+        </form>
+      
+        <div id="state"></div>
+    </div>
+    
+  </div>
+
+</body>
+
+
+
+</html>
